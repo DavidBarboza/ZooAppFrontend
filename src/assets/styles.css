@@ -9,7 +9,15 @@
 }
 
 .navbar-nav .active{
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid orange !important;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    border-bottom: 3px solid orange;    
+}
+
+.navbar-default .navbar-nav>li>a{
+    border-bottom: 3px solid transparent;    
 }
 
 .btn_transiciones{
