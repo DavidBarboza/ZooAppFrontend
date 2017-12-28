@@ -17,8 +17,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AnimalsComponent } from './components/animals/animals.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { UserEditComponent } from './components/user-edit/user-edit.component';
 
-///importar nuevo modul email
+///importar nuevo modulo email
 import { ModuloEmailModule } from './moduloemail/moduloemail.module';
 import { AdminModule } from './admin/admin.module';
 
@@ -34,7 +35,8 @@ import { AdminModule } from './admin/admin.module';
     KeepersComponent,
     SimpleTinyComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    UserEditComponent
   ],
   imports: [    
     BrowserModule,
