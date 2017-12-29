@@ -1,3 +1,4 @@
+import { AdminGuard } from './../services/admin.guard';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule, Component } from '@angular/core';
 
@@ -11,6 +12,7 @@ const adminRoutes: Routes = [
     {
         path: 'admin-panel',
         component: MainComponent,
+        canActivate: [AdminGuard],
         children: [
             { path: '', redirectTo: 'listado', pathMatch: 'full'},
             { path: 'listado', component: ListComponent },
