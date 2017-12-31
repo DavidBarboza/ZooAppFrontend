@@ -11,6 +11,7 @@ import { AnimalsComponent } from './components/animals/animals.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserEditComponent } from './components/user-edit/user-edit.component';
+import { AnimalDetailComponent } from './components/animal-detail/animal-detail.component';
 
 const appRoutes: Routes = [
     //{path: '', component: HomeComponent},
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     {path: 'registro', component: RegisterComponent},
     {path: 'login', component: LoginComponent},
     {path: 'mis-datos', component:UserEditComponent},
+    {path: 'animals/:id', component:AnimalDetailComponent},
     {path: '**', component: NotfoundComponent}//cuando accedamos a una ruta que no existe o incorrecta
 ];
 
