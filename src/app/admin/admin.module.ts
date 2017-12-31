@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http'
 import { AdminRoutingModule } from './admin-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Components
 import { MainComponent } from './components/main/main.component';
@@ -30,7 +31,8 @@ import { AdminGuard } from './../services/admin.guard';
         CommonModule,
         FormsModule,
         HttpModule,
-        AdminRoutingModule
+        AdminRoutingModule,
+        BrowserAnimationsModule
     ],
     exports: [],
     providers: [

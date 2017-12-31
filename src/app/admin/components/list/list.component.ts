@@ -7,10 +7,14 @@ import { AnimalService } from './../../../services/animal.service';
 import { Animal } from './../../../models/animal';
 import { GLOBAL } from './../../../services/global';
 
+import { fadeLateral } from './../../animation';
+
+
 @Component({
     selector: 'admin-list',
     templateUrl: './list.component.html',
-    providers: [AnimalService, UserService]
+    providers: [AnimalService, UserService],
+    animations: [fadeLateral]
 })
 export class ListComponent implements OnInit{
     public title: string;
@@ -37,7 +41,7 @@ export class ListComponent implements OnInit{
         this._animalService.getAnimals().subscribe(
             response => {
                 if (!response.animals) {
-                    this._router
+
                 } else {
                     this.animals = response.animals;
                 }
