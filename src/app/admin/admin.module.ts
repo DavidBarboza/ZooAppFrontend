@@ -13,6 +13,7 @@ import { AddComponent } from './components/add/add.component';
 
 //Servicios
 import { UserService } from './../services/user.service';
+import { SearchPipe } from './pipes/search.pipe';
 
 //Guards
 import { AdminGuard } from './../services/admin.guard';
@@ -22,7 +23,8 @@ import { AdminGuard } from './../services/admin.guard';
         MainComponent,
         ListComponent,
         EditComponent,
-        AddComponent
+        AddComponent,
+        SearchPipe
     ],
     imports: [
         CommonModule,

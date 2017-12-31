@@ -17,6 +17,7 @@ export class ListComponent implements OnInit{
     //numbers = new Array(10);
     public animals: Animal[];
     public token;
+    public busqueda: string;
 
     constructor(
         private _route: ActivatedRoute,
